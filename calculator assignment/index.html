@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="calculator">
+    <div  class="calculator__output">
+        <input id="result"   type="text" readonly>
+    </div>
+     <div class="calculator__keys">
+        <button onclick="getNumber('+')" class="calculator__key calculator__key--operator">+</button>
+        <button onclick="getNumber('-')" class="calculator__key calculator__key--operator">-</button>
+        <button onclick="getNumber('*')" class="calculator__key calculator__key--operator">&times;</button>
+        <button onclick="getNumber('/')" class="calculator__key calculator__key--operator">÷</button>
+        <button onclick="getNumber('7')" class="calculator__key">7</button>
+        <button onclick="getNumber('8')" class="calculator__key">8</button>
+        <button onclick="getNumber('9')" class="calculator__key">9</button>
+        <button onclick="getNumber('4')" class="calculator__key">4</button>
+        <button onclick="getNumber('5')" class="calculator__key">5</button>
+        <button onclick="getNumber('6')" class="calculator__key">6</button>
+        <button onclick="getNumber('1')" class="calculator__key">1</button>
+        <button onclick="getNumber('2')" class="calculator__key">2</button>
+        <button onclick="getNumber('3')" class="calculator__key">3</button>
+        <button onclick="getNumber('0')" class="calculator__key">0</button>
+        <button onclick="getNumber('.')" class="calculator__key">.</button>
+
+        <button  onclick="clearScreen()"  class="calculator__key">AC</button>
+
+
+        <button  onclick="deleteLastCharacter()"  class="calculator__key">←</button>
+
+        <button  onclick="squareNumber()"  class="calculator__key">√<sup>2</sup></button>
+        <button onclick=" getResult()" class="calculator__key 
+        calculator__key--enter">=</button>
+     </div>
+   </div> 
+</body>
+<script src="app.js"></script>
+</html>
